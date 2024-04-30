@@ -3,6 +3,10 @@ package com.hitachirail.messageprocessor;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
 @Service
 public class MessageService {
 
@@ -25,5 +29,15 @@ public class MessageService {
                         messageProcessor.printMessage();
     }
 
+    private Map<Long, String> messages = new ConcurrentHashMap<>();
+
+    // Method to update message content
+    public boolean updateMessageContent(Long id, String content) {
+        if (messages.containsKey(id)) {
+            messages.put(id, content);
+            return true;
+        }
+        return false;
     }
+}
 
