@@ -1,5 +1,5 @@
 # IFB398/399 Capstone Project - Message Processing Microservice
-An IFB398 & IFB399 Capstone Project undertaken by Group 60 in corroboration with Hitachi Rail STS
+An IFB398 & IFB399 Capstone Project undertaken by Group 60 in collaboration with Hitachi Rail STS
 
 ## Project Description
 In progress.
